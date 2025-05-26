@@ -1,0 +1,152 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+}
+
+header {
+  background-color: #1e1b3a;
+  text-align: center;
+  padding: 1.5rem;
+  color: #ffcc70;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #ebdc0b;
+  margin-top: 0.5rem;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background: #ffcc70;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #1e1b3a;
+}
+
+nav button:hover {
+  background: #ffd891;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.drink {
+  background: #2c2c54;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.drink:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.drink img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.drink-info {
+  padding: 1rem;
+}
+
+.drink-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  color: #ffcc70;
+}
+
+.drink-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+#modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+#modal.show {
+  display: flex;
+}
+
+#modalContent {
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+#modalContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+#modalContent h2 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+#modalContent ul {
+  margin-top: 0;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+#modalContent p {
+  font-weight: bold;
+}
+
+#modalCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #1e1b3a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}

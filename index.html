@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🍹Encanto das Bebidas🍹</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>🍹Catalogo de Bebidas🍹</h1>
+  <p class="subtitulo">Explore sabores doces, cítricos, cremosos, refrescantes e salgados!</p>
+</header>
+
+<nav>
+  <button onclick="filtrarBebidas('todas')">Todas</button>
+  <button onclick="filtrarBebidas('doce')">Doces</button>
+  <button onclick="filtrarBebidas('citrica')">Cítricas</button>
+  <button onclick="filtrarBebidas('cremosa')">Cremosas</button>
+  <button onclick="filtrarBebidas('refrescante')">Refrescantes</button>
+  <button onclick="filtrarBebidas('salgada')">Salgadas</button>
+</nav>
+
+<main class="container" id="drinkContainer">
+  <!-- Bebidas aparecerão aqui -->
+</main>
+
+<div id="modal">
+  <div id="modalContent">
+    <button id="modalCloseBtn" onclick="fecharModal()">Fechar</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
